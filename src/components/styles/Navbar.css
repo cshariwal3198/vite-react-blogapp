@@ -1,0 +1,27 @@
+*{
+    margin: 1px;
+    padding: 0px;
+}
+.head-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(180, 179, 179);
+    padding: 5px;
+    box-shadow: 20px 10px 20px rgb(15, 14, 14);
+    border-radius: 25px;
+}
+.head-list a{
+    margin-top: 25px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 24px;
+}
+.logo-div{
+    text-align: center;
+    border: .5px solid black;
+    padding: 5px;
+    background-color: snow;
+    border-radius: 20px;
+}

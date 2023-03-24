@@ -1,0 +1,27 @@
+.post-blog form{
+    display: grid;
+    grid-template-columns: 600px;
+}
+.post-blog form div{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    padding: 10px;
+}
+.post-blog form div input{
+    width: 500px;
+    text-align: center;
+    height: 40px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 20px;
+}
+.post-blog form textarea{
+    width: 500px;
+}
+.post-blog form input[type=submit]{
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-left: 80px;
+}
