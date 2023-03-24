@@ -3,7 +3,7 @@ import './CreateBlog.css'
 
 function CreateBlog() {
 
-  const authorName = useRef()
+  const authorName = useRef<HTMLInputElement>(null)
 
   return (
     <div className='post-blog'>
