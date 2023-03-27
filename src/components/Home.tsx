@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ISingleBlogObject, IUseFetchReturn } from "../types";
 import "./styles/Home.css";
 import UseFetchData from "./useFetchData";
+import { MoonLoader } from "react-spinners";
 
 function Home() {
   const result: IUseFetchReturn = UseFetchData(
@@ -21,7 +22,7 @@ function Home() {
           {" "}
           <u>Suggestions for you</u> :{" "}
         </h3>
-        {data.map((item: ISingleBlogObject) => {
+        { pending? <MoonLoader color="#36d7b7" className="home-spinner"/> : data.map((item: ISingleBlogObject) => {
           return (
             <div key={item.id} className="single-blog-div">
               <div id="heading">

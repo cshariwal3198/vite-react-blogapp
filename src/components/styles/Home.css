@@ -4,6 +4,11 @@
     font-size: large;
     margin-left: 40px;
 }
+.home-spinner{
+    margin-left: 45%;
+    margin-top: 10%;
+    
+}
 .search-Blog input{
     width: 70%;
     height: 50px;
