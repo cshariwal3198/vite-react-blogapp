@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./CreateBlog.css";
+import "./createBlog.css";
 import { useNavigate } from "react-router-dom";
 import { ISingleBlogObject } from "../../types";
 
