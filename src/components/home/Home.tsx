@@ -12,7 +12,7 @@ function Home() {
     <div>
       <div className="search-Blog">
         {" "}
-        Explore : <input type="text" placeholder="enter topic" />
+        Explore : <input type="text" placeholder="search a topic" />
         <button>Search</button>
       </div>
       <div className="home-body">

@@ -1,37 +1,26 @@
 {
   "blogData": [
     {
-      "authorName": "csh",
+      "authorName": "chetan",
       "email": "csh@gmail.com",
       "password": "csh123",
-      "heading": "React js application",
-      "type": "Technology",
-      "picture": "https://wallpaperaccess.com/full/3949076.jpg",
-      "content": "React js is a javascript library, used to create ui part of single page applications.",
-      "publishedOn": "2023-03-21",
+      "heading": "Reactjs and its usage",
+      "picture": "https://images.unsplash.com/photo-1597985654548-2c9af02d6c54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODV8fG9wdGlvbnMlMjBjb2xvcmZ1bHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+      "content": "Reactjs is a frontend library of javascript used for the ui creation for singlepage applications.",
+      "publishedOn": "2023-03-20",
+      "blogType": "Technology",
       "id": 1
     },
     {
-      "authorName": "test",
-      "email": "test@gmail.com",
-      "password": "test123",
-      "heading": "test heading",
-      "type": "General",
-      "picture": "https://images.unsplash.com/photo-1559038432-900891341900?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-      "content": "This is a test content for testing purpose.",
-      "publishedOn": "2023-03-22",
-      "id": 2
-    },
-    {
       "authorName": "peter",
-      "email": "spiderman@gmail.com",
-      "password": "spider123",
-      "heading": "peter is spiderman",
-      "type": "Entertainment",
-      "picture": "https://images.unsplash.com/photo-1584994696678-3d739b5ac1bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNwaWRlcm1hbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
-      "content": "Hello everyone, spiderman here.",
-      "publishedOn": "2023-03-26",
-      "id": 3
+      "email": "peter@gmail.com",
+      "password": "peter123",
+      "heading": "About Spiderman",
+      "picture": "https://images.unsplash.com/photo-1597985654548-2c9af02d6c54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODV8fG9wdGlvbnMlMjBjb2xvcmZ1bHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+      "content": "Spiderman is a comic character, created by Marvel studios and Stan lee.",
+      "publishedOn": "2023-03-14",
+      "blogType": "Entertainment",
+      "id": 2
     }
   ]
 }

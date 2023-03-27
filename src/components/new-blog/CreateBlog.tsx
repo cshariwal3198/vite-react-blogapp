@@ -13,6 +13,7 @@ function CreateBlog() {
   const blogPic = useRef<HTMLInputElement>(null);
   const content = useRef<HTMLTextAreaElement>(null);
   const publishDate = useRef<HTMLInputElement>(null);
+  const blogType = useRef<HTMLSelectElement>(null)
 
   function createNewBlog(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -25,6 +26,7 @@ function CreateBlog() {
       picture: blogPic.current?.value,
       content: content.current?.value,
       publishedOn: publishDate.current?.value,
+      blogType: blogType.current?.value
     };
 
     fetch("http://localhost:4000/blogData", {
@@ -85,6 +87,20 @@ function CreateBlog() {
             required
             autoComplete="off"
           />
+        </div>
+        <div>
+          <label htmlFor="type">Blog type : </label>
+          <select name="type" className="blog-type" ref={blogType}>
+            <option value="option">Select type of your blog</option>
+            <option value="Technology">Technology</option>
+            <option value="Science">Science</option>
+            <option value="International">International</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Cultural">Cultural</option>
+            <option value="History">History</option>
+            <option value="Political">Political</option>
+            <option value="General">General</option>
+          </select>
         </div>
         <div>
           <label htmlFor="picture">Related picture : </label>
