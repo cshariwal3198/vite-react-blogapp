@@ -1,28 +1,44 @@
 {
-    "blogData" : [
-        {
-            "id": "0",
-            "authorName": "test",
-            "email": "test@gmail.com",
-            "password":"test-pass1",
-            "heading": "test-post-heading",
-            "content": "hello everyone, this is for test purpose",
-            "picture":"https://images.unsplash.com/photo-1679572125292-d01c28de06ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60",
-            "publishedOn" : "date" 
-        },
-        {
-            "id": "1",
-            "authorName": "test2",
-            "email": "test2@gmail.com",
-            "password":"test-pass2",
-            "heading": "second-post-heading",
-            "content": "hello everyone, this is for test purpose",
-            "picture":"https://images.unsplash.com/photo-1679572125292-d01c28de06ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60",
-            "publishedOn" : "date/date" 
-        }
-    ]
+  "blogData": [
+    {
+      "id": "0",
+      "authorName": "test",
+      "email": "test@gmail.com",
+      "password": "test-pass1",
+      "heading": "test-post-heading",
+      "content": "hello everyone, this is for test purpose",
+      "picture": "https://images.unsplash.com/photo-1679572125292-d01c28de06ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60",
+      "publishedOn": "date"
+    },
+    {
+      "id": "1",
+      "authorName": "test2",
+      "email": "test2@gmail.com",
+      "password": "test-pass2",
+      "heading": "second-post-heading",
+      "content": "hello everyone, this is for test purpose",
+      "picture": "https://images.unsplash.com/photo-1679572125292-d01c28de06ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60",
+      "publishedOn": "date/date"
+    },
+    {
+      "authorName": "agp",
+      "email": "agp@gmail.com",
+      "password": "12345",
+      "heading": "about something new",
+      "picture": "https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-260nw-1029506242.jpg",
+      "content": "hello everyone who is reading this.",
+      "publishedOn": "2023-03-15",
+      "id": "Rm_nm9c"
+    },
+    {
+      "authorName": "chetan",
+      "email": "csh@gmail.com",
+      "password": "chetan",
+      "heading": "Indian geography",
+      "picture": "",
+      "content": "Hello,\n           India is a diverse country culturally, demographically and \ngeographically.",
+      "publishedOn": "2023-03-09",
+      "id": "kuExOc-"
+    }
+  ]
 }
-
-
-
-    
