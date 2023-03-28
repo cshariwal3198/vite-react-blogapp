@@ -1,28 +1,26 @@
 {
-    "blogData" : [
-        {
-            "id": "0",
-            "authorName": "test",
-            "email": "test@gmail.com",
-            "password":"test-pass1",
-            "heading": "test-post-heading",
-            "content": "hello everyone, this is for test purpose",
-            "picture":"https://images.unsplash.com/photo-1679572125292-d01c28de06ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60",
-            "publishedOn" : "date" 
-        },
-        {
-            "id": "1",
-            "authorName": "test2",
-            "email": "test2@gmail.com",
-            "password":"test-pass2",
-            "heading": "second-post-heading",
-            "content": "hello everyone, this is for test purpose",
-            "picture":"https://images.unsplash.com/photo-1679572125292-d01c28de06ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60",
-            "publishedOn" : "date/date" 
-        }
-    ]
+  "blogData": [
+    {
+      "authorName": "chetan",
+      "email": "csh@gmail.com",
+      "password": "csh123",
+      "heading": "Reactjs and its usage",
+      "picture": "https://images.unsplash.com/photo-1597985654548-2c9af02d6c54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODV8fG9wdGlvbnMlMjBjb2xvcmZ1bHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+      "content": "Reactjs is a frontend library of javascript used for the ui creation for singlepage applications.",
+      "publishedOn": "2023-03-20",
+      "blogType": "Technology",
+      "id": 1
+    },
+    {
+      "authorName": "peter",
+      "email": "peter@gmail.com",
+      "password": "peter123",
+      "heading": "About Spiderman",
+      "picture": "https://images.unsplash.com/photo-1597985654548-2c9af02d6c54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODV8fG9wdGlvbnMlMjBjb2xvcmZ1bHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
+      "content": "Spiderman is a comic character, created by Marvel studios and Stan lee.",
+      "publishedOn": "2023-03-14",
+      "blogType": "Entertainment",
+      "id": 2
+    }
+  ]
 }
-
-
-
-    

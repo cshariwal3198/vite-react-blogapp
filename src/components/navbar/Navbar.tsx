@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles/Navbar.css';
-import logo from '../assets/images/blog-logo.png';
+import './navbar.css';
+import logo from '../../assets/images/blog-logo.png';
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {

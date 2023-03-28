@@ -1,4 +1,13 @@
+.post-blog{
+    text-align: center;
+    font-family: serif;
+    font-size: x-large;
+    background-image: url('https://media.istockphoto.com/id/1450178479/photo/change-concepts-with-yellow-paper-airplane-leading-among-white-on-blue-background.jpg?b=1&s=170667a&w=0&k=20&c=1BYT0dhQxkQjZTzz339eC_LbRFD-xpqXCFNa75Ek40E=');
+    
+}
+
 .post-blog form{
+    margin-left: 124px;
     display: grid;
     grid-template-columns: 600px;
 }
@@ -16,6 +25,15 @@
     border-right: 0px;
     border-radius: 20px;
 }
+.post-blog form div select{
+    width: 500px;
+    text-align: center;
+    height: 40px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 20px; 
+}
 .post-blog form textarea{
     width: 500px;
 }
@@ -23,5 +41,5 @@
     height: 40px;
     border-radius: 8px;
     margin-top: 30px;
-    margin-left: 80px;
+    margin-left: 220px;
 }

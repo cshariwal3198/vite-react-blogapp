@@ -1,13 +1,14 @@
 import React from 'react';
-// import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
 import { Routes, Route } from 'react-router-dom';
-import Categories from './components/Categories';
-import Home from './components/Home';
+import Categories from './components/categories/Categories';
+import Home from './components/home/Home';
 import CreateBlog from './components/new-blog/CreateBlog';
 import About from './components/About';
 import Admin from './components/admin-files/Admin';
 import VarifyAdmin from './components/admin-files/VarifyAdmin';
+import SingleBlog from './components/single-blog/SingleBlog';
+import Showlist from './components/showlist/Showlist';
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/varifyadmin" element={<VarifyAdmin />} />
       <Route path="/admin" element={<Admin />} />
+      <Route path={`/singleblog/:id`} element={<SingleBlog />} />
+      <Route path={`/showlist/:type`} element={<Showlist />} />
     </Routes>
   </div>
 
