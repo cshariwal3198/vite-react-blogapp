@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import "./createBlog.css";
 import { useNavigate } from "react-router-dom";
-import { ISingleBlogObject } from "../../types";
 
 function CreateBlog() {
   const navigate = useNavigate();
@@ -18,7 +17,7 @@ function CreateBlog() {
   function createNewBlog(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    const newBlogObject = {                // ISingleBlogObject has to be applied here.
+    const newBlogObject = {                    // ISingleBlogObject has to be applied here.
       authorName: authorName.current?.value,
       email: authorMail.current?.value,
       password: authorPassword.current?.value,
@@ -33,9 +32,7 @@ function CreateBlog() {
       method: "POST",
       body: JSON.stringify(newBlogObject),
       headers: { "Content-Type": "application/json" },
-    }).then(() => {
-      alert("Your new blog has been added successfully."), navigate("/");
-    });
+    }).then(() => { alert("Your new blog has been added successfully."), navigate("/") });
   }
 
   return (

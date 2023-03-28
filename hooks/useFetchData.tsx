@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { ISingleBlogObject, IAllBlogFetch, ISingleBlogFetch } from '../types';
+import { ISingleBlogObject, IAllBlogFetch, ISingleBlogFetch } from '../src/types';
 
-function UseFetchData(request: string): IAllBlogFetch | ISingleBlogFetch {
+function useFetchData(request: string): IAllBlogFetch | ISingleBlogFetch {
     const [data, setData] = useState([]);
     const [pending, setPending] = useState(true);
     const [error, setError] = useState('');
@@ -17,4 +17,4 @@ function UseFetchData(request: string): IAllBlogFetch | ISingleBlogFetch {
     return { data, pending, error };
 }
 
-export default UseFetchData;
+export default useFetchData;

@@ -1,11 +1,11 @@
 import React from "react";
 import { ColorRing } from "react-loader-spinner";
 import "./admin.css";
-import UseFetchData from "../useFetchData";
+import useFetchData from "../../../hooks/useFetchData";
 import { IAllBlogFetch, ISingleBlogObject } from "../../types";
 
 export default function Admin() {
-  const { data, pending, error } = UseFetchData("http://localhost:4000/blogData") as IAllBlogFetch;
+  const { data, pending, error } = useFetchData("http://localhost:4000/blogData") as IAllBlogFetch;
 
   function handleDelete(id: number) {
     fetch(`http://localhost:4000/blogData/${id}`, { method: "DELETE" }).then(

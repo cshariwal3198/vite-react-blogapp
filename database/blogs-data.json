@@ -21,6 +21,17 @@
       "publishedOn": "2023-03-14",
       "blogType": "Entertainment",
       "id": 2
+    },
+    {
+      "authorName": "adam",
+      "email": "adam@gmail.com",
+      "password": "adam12",
+      "heading": "Blogging apps",
+      "picture": "https://media.istockphoto.com/id/1208856040/photo/millennial-indian-woman-paying-bills-on-laptop-online.jpg?b=1&s=170667a&w=0&k=20&c=VMzondQAZEel9U-iTotOw5Kd2lNoOmwbzoIrqrq318M=",
+      "content": " China, India, and the United States are the top three countries with the highest number of smartphone users. If you’re also using a smartphone and looking for the best mobile apps for blogging, this post is just for you.",
+      "publishedOn": "2023-03-27",
+      "blogType": "Technology",
+      "id": 3
     }
   ]
 }

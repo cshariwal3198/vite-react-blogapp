@@ -12,7 +12,7 @@
 .search-Blog input{
     width: 70%;
     height: 50px;
-    border: 2px solid rgb(101, 101, 254);
+    border: 2px solid rgb(17, 18, 26);
     border-radius: 30px;
     text-align: center;
     font-size: 30px;
@@ -37,13 +37,16 @@
 .single-blog-div{
     height: 130px;
     border-radius: 40px;
-    border: 1px solid black;
+    border: 1px solid rgb(15, 12, 12);
     border-top: 0px;
     border-left: 0px;
     margin: 20px;
     padding: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
     justify-content: space-around;
     box-shadow: 30px 10px 30px rgb(138, 173, 195);
     cursor: pointer;

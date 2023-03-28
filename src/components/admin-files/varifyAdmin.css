@@ -5,24 +5,26 @@
 }
 .varifyadmin-div{
     margin: auto;
-    height: 420px;
-    width: 80%;
+    height: auto;
+    width: auto;
     padding: 10px;
     border: 1px solid black;
     justify-content: space-around;
-    display: grid;
-    grid-template-columns: 500px 300px;
+    display: flex;
+    flex-direction: row;
     text-align: center;
     border-radius: 30px;
     color: rgb(249, 47, 11);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .varifyadmin-div img{
+    margin-left: 35px;
+    width: 90%;
     border: 1px solid black;
     border-radius: 15px;
 }
 .login-div{
-    width: 300px;
+    width: auto;
     margin-top: 20px;
     display: flex;
     flex-direction: column;

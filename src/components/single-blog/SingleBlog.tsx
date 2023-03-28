@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import './singleBlog.css';
 import { CircleLoader } from "react-spinners";
 import { ISingleBlogFetch, ISingleBlogObject } from '../../types';
-import UseFetchData from '../useFetchData';
+import UseFetchData from '../../../hooks/useFetchData';
 
 function SingleBlog() {
 

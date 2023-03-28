@@ -76,7 +76,7 @@ export default function VarifyAdmin() {
         <div ref={adminVisible} style={{ visibility: "hidden" }}>
           {isRightAdmin ? (
             <div>
-              Click here <Link to="/admin">AdminPage</Link>
+              Click here for <Link to="/admin">AdminPage</Link>
             </div>
           ) : (
             "Entered details are wrong...!! Please try again"
