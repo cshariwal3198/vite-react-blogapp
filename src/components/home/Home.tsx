@@ -6,26 +6,8 @@ import SearchBlockInHome from "./search-blog/searchBlockInHome";
 import { MoonLoader } from "react-spinners";
 import { Link } from "react-router-dom";
 
-export function GetBlogBlock(item: ISingleBlogObject) {
-  return <>
-    <Link to={`/singleblog/${item.id}`} style={{ color: "black", textDecoration: "none" }}>
-      <div className="single-blog-div">
-
-        <div id="heading">
-          <h6> {'->'} {item.heading}</h6>
-          <small>by : {item.authorName}</small>
-          <p>{item.content.slice(0, 100) + "..."}</p>
-        </div>
-
-        <img src={item.picture} height="100px" width="120px" />
-
-      </div>
-    </Link>
-  </>;
-}
-
 export default function Home() {
-  const { data, error, pending } = useFetchData("http://localhost:4000/blogData") as IAllBlogFetch;
+  const { data, pending } = useFetchData("http://localhost:4000/blogData") as IAllBlogFetch;
 
   return (
     <div>
@@ -45,4 +27,25 @@ export default function Home() {
 
     </div>
   );
+}
+
+export function GetBlogBlock(item: ISingleBlogObject) {
+
+  const { id, heading, authorName, content, picture } = item;
+
+  return <>
+    <Link to={`/singleblog/${id}`} style={{ color: "black", textDecoration: "none" }}>
+      <div className="single-blog-div">
+
+        <div id="heading">
+          <h6> {'->'} {heading}</h6>
+          <small>by : {authorName}</small>
+          <p>{content.slice(0, 100) + "..."}</p>
+        </div>
+
+        <img src={picture} height="100px" width="120px" />
+
+      </div>
+    </Link>
+  </>;
 }

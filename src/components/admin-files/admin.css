@@ -10,10 +10,15 @@
 }
 .admin-table{
     margin: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
     justify-content: space-around;
     width: 90%;
     text-align: center;
+    color: white;
+    font-size: 22px;
+    background-position: right;
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/89/562/desktop-wallpaper-do-everything-that-windows-or-linux-system-administrator-or-admin-suppose-to-do-by-zeeshankhalid07.jpg');
 }
 .admin-table th{
     padding: 15px;
@@ -26,7 +31,6 @@
 }
 .admin-table button{
     padding: 5px;
-    width: 65%;
     border: 0px;
     background-color: rgb(254, 232, 203);
     border-radius: 8px;

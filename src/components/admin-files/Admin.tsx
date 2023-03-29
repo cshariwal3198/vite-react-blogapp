@@ -12,62 +12,44 @@ export default function Admin() {
       () => {
         alert("one blog deleted successfully...!");
         window.location.reload();
-      }
-    );
+      });
   }
 
   return (
     <div>
-      <h3 className="welcome">Welcome Admin</h3>
+      <h3 className="welcome">Welcome Admin </h3>
       {data ? (
-        <table
-          className="admin-table"
-          border={1}
-          style={{ border: "1px solid black" }}
-        >
+        <table className="admin-table" border={1} style={{ border: "1px solid black" }}>
           <thead>
             <th>Sl No</th>
             <th>Author name</th>
             <th>About</th>
+            <th>Blog Type</th>
             <th>Actions</th>
           </thead>
           <tbody>
             {pending ? (
               <div className="loader">
-                <ColorRing
-                  visible={true}
-                  height="100"
-                  width="100"
-                  ariaLabel="blocks-loading"
-                  wrapperStyle={{}}
+                <ColorRing visible={true} height="100" width="100" ariaLabel="blocks-loading"
                   wrapperClass="blocks-wrapper"
-                  colors={[
-                    "#e15b64",
-                    "#f47e60",
-                    "#f8b26a",
-                    "#abbd81",
-                    "#849b87",
-                  ]}
-                />
+                  colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]} />
               </div>
-            ) : (
-              data.map((singleBlog: ISingleBlogObject) => {
-                return (
-                  <tr key={singleBlog.id}>
-                    <td>{Number(singleBlog.id) + 1}</td>
-                    <td>{singleBlog.authorName}</td>
-                    <td>{singleBlog.heading}</td>
-                    <td><button onClick={() => handleDelete(Number(singleBlog.id))}>Delete</button>
-                    </td>
-                  </tr>
-                );
-              })
+            ) : (data.map(({ id, authorName, heading, blogType }: ISingleBlogObject) => {
+              return (
+                <tr key={id}>
+                  <td>{Number(id)}</td>
+                  <td>{authorName}</td> 
+                  <td>{heading}</td>
+                  <td>{blogType}</td>
+                  <td><button onClick={() => handleDelete(Number(id))}>Delete</button>
+                  </td>
+                </tr>
+              );
+            })
             )}
           </tbody>
         </table>
-      ) : (
-        ""
-      )}
+      ) : ("")}
     </div>
   );
 }
