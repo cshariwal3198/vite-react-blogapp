@@ -1,37 +1,48 @@
 {
   "blogData": [
     {
-      "authorName": "chetan",
-      "email": "csh@gmail.com",
-      "password": "csh123",
-      "heading": "Reactjs and its usage",
-      "picture": "https://images.unsplash.com/photo-1597985654548-2c9af02d6c54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODV8fG9wdGlvbnMlMjBjb2xvcmZ1bHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
-      "content": "Reactjs is a frontend library of javascript used for the ui creation for singlepage applications.",
+      "authorName": "peter",
+      "email": "peter@gmail.com",
+      "password": "peter123",
+      "heading": "React js ",
+      "picture": "https://e1.pxfuel.com/desktop-wallpaper/792/423/desktop-wallpaper-pin-on-reactjs-reactjs.jpg",
+      "content": "Reactjs is the most popular frontend library used to create ui part of the single page web applications.",
       "publishedOn": "2023-03-20",
       "blogType": "Technology",
       "id": 1
     },
     {
-      "authorName": "peter",
-      "email": "peter@gmail.com",
-      "password": "peter123",
-      "heading": "About Spiderman",
-      "picture": "https://images.unsplash.com/photo-1597985654548-2c9af02d6c54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODV8fG9wdGlvbnMlMjBjb2xvcmZ1bHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60",
-      "content": "Spiderman is a comic character, created by Marvel studios and Stan lee.",
-      "publishedOn": "2023-03-14",
-      "blogType": "Entertainment",
+      "authorName": "Ram",
+      "email": "ram@gmail.com",
+      "password": "ram123",
+      "heading": "Ramayana",
+      "picture": "https://e0.pxfuel.com/wallpapers/329/551/desktop-wallpaper-ramayana-art-gods-hindu.jpg",
+      "content": "Ramayana is a holy epic for Hindus and is revered all around the world by the followers of Shriram.",
+      "publishedOn": "2023-03-20",
+      "blogType": "Cultural",
       "id": 2
     },
     {
-      "authorName": "adam",
-      "email": "adam@gmail.com",
-      "password": "adam12",
-      "heading": "Blogging apps",
-      "picture": "https://media.istockphoto.com/id/1208856040/photo/millennial-indian-woman-paying-bills-on-laptop-online.jpg?b=1&s=170667a&w=0&k=20&c=VMzondQAZEel9U-iTotOw5Kd2lNoOmwbzoIrqrq318M=",
-      "content": " China, India, and the United States are the top three countries with the highest number of smartphone users. If you’re also using a smartphone and looking for the best mobile apps for blogging, this post is just for you.",
-      "publishedOn": "2023-03-27",
-      "blogType": "Technology",
+      "authorName": "Tom",
+      "email": "tom@gmail.com",
+      "password": "tom123",
+      "heading": "Tom and Jerry",
+      "picture": "https://e1.pxfuel.com/desktop-wallpaper/301/696/desktop-wallpaper-iphone-tom-and-jerry-tom-and-jerry-the-movie.jpg",
+      "content": "Tom and jerry is one of the most popular cartoon shows. These characters are introduced by Hanna and Barbera in the year 1940.",
+      "publishedOn": "2023-03-24",
+      "blogType": "Entertainment",
       "id": 3
+    },
+    {
+      "authorName": "Arjun",
+      "email": "arjun@gmail.com",
+      "password": "arjun123",
+      "heading": "Mahabharata",
+      "picture": "https://e1.pxfuel.com/desktop-wallpaper/949/123/desktop-wallpaper-mahabharata-karna-mahabharat.jpg",
+      "content": "Mahabharat is a Hindu epic, and Its a story about victory of Dharma over Adharma or evilness. Main character of the story is ShriKrishna.",
+      "publishedOn": "2023-03-15",
+      "blogType": "Cultural",
+      "id": 4
     }
   ]
 }

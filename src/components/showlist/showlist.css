@@ -1,0 +1,15 @@
+.list-div{
+    margin: 20px;
+    padding: 10px;
+    justify-content: space-around;
+    font-style: italic;
+    color: rgb(255, 116, 2);
+}
+.error-div{
+    text-align: center;
+    margin: auto;
+    margin-top: 120px;
+    color: black;
+    font-size: x-large;
+    font-weight: 400;
+}

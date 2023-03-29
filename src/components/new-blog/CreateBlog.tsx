@@ -32,13 +32,13 @@ function CreateBlog() {
       method: "POST",
       body: JSON.stringify(newBlogObject),
       headers: { "Content-Type": "application/json" },
-    }).then(() => { alert("Your new blog has been added successfully."), navigate("/") });
+    }).then(() => { alert("Thank you. Your new blog has been posted successfully :)"), navigate("/") });
   }
 
   return (
     <div className="post-blog">
       <br />
-      <h4> Hello, Share your valuable thoughts</h4>
+      <h4> Hello</h4>
       <br />
       <form className="post-form" onSubmit={(event) => createNewBlog(event)}>
         <div>
