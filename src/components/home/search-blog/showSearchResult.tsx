@@ -1,6 +1,6 @@
 import React from 'react'
 import { IShowResult, ISingleBlogObject } from "../../../types/types";
-import { GetBlogBlock } from "../home";
+import { GetBlogBlock } from '../Home';
 
 function ShowSearchResult({ searchResult, isAvailable, filteredBlogs }: IShowResult) {
     return (<>

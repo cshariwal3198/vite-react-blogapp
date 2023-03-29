@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import useFetchData from '../../../../hooks/useFetchData';
 import { IAllBlogFetch, IShowResult, ISingleBlogObject } from '../../../types/types';
-import { GetBlogBlock } from '../home';
 import ShowSearchResult from './showSearchResult';
 
 export default function SearchBlockInHome() {
