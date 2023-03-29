@@ -2,7 +2,7 @@ import React from "react";
 import { ColorRing } from "react-loader-spinner";
 import "./admin.css";
 import useFetchData from "../../../hooks/useFetchData";
-import { IAllBlogFetch, ISingleBlogObject } from "../../types";
+import { IAllBlogFetch, ISingleBlogObject } from "../../types/types";
 
 export default function Admin() {
   const { data, pending, error } = useFetchData("http://localhost:4000/blogData") as IAllBlogFetch;

@@ -1,14 +1,14 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import About from './components/about-folder/about';
-import Admin from './components/admin-files/admin';
-import VarifyAdmin from './components/admin-files/varifyAdmin';
-import Categories from './components/categories/categories';
-import Home from './components/home/home';
-import Navbar from './components/navbar/navbar';
-import CreateBlog from './components/new-blog/createBlog';
-import Showlist from './components/showlist/showlist';
-import SingleBlog from './components/single-blog/singleBlog';
+import About from '../about-folder/about';
+import Admin from '../admin-files/admin';
+import VarifyAdmin from '../admin-files/varifyAdmin';
+import Categories from '../categories/categories';
+import Home from '../home/home';
+import Navbar from '../navbar/navbar';
+import CreateBlog from '../new-blog/createBlog';
+import Showlist from '../showlist/showlist';
+import SingleBlog from '../single-blog/singleBlog';
 
 function App() {
 

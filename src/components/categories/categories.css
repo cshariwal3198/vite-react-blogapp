@@ -29,3 +29,7 @@
     background-color: rgb(235, 235, 234);
     text-decoration: none;
 }
+.categories :hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}

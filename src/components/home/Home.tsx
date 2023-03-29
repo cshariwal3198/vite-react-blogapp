@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { IAllBlogFetch, ISingleBlogObject } from "../../types";
+import { IAllBlogFetch, ISingleBlogObject } from "../../types/types";
 import "./Home.css";
 import useFetchData from "../../../hooks/useFetchData";
 import SearchBlockInHome from "./searchBlockInHome";

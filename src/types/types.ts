@@ -13,3 +13,9 @@ export interface ISingleBlogFetch{
     pending: boolean,
     error: string,
 }
+
+export interface IShowResult {
+    filteredBlogs: ISingleBlogObject[],
+    searchResult: any,
+    isAvailable: boolean;
+  }

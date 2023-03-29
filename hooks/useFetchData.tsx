@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ISingleBlogObject, IAllBlogFetch, ISingleBlogFetch } from '../src/types';
+import { ISingleBlogObject, IAllBlogFetch, ISingleBlogFetch } from '../src/types/types';
 
 function useFetchData(request: string): IAllBlogFetch | ISingleBlogFetch {
     const [data, setData] = useState([]);
@@ -11,7 +11,7 @@ function useFetchData(request: string): IAllBlogFetch | ISingleBlogFetch {
             fetch(request).then((res) =>res.json())
                 .then((data) => { setData(data); setPending(false); })
                 .catch((err) => { setError("failed to fetch, please try after some time"); setPending(false); });
-        }, 2000);
+        }, 1500);
     }, []);
 
     return { data, pending, error };

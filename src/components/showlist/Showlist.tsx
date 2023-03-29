@@ -3,7 +3,7 @@ import './showlist.css';
 import { useParams } from 'react-router-dom';
 import { MoonLoader } from 'react-spinners';
 import useFetchData from '../../../hooks/useFetchData';
-import { IAllBlogFetch, ISingleBlogObject } from '../../types';
+import { IAllBlogFetch, ISingleBlogObject } from '../../types/types';
 import { GetBlogBlock } from '../home/home';
 
 function Showlist() {
@@ -19,12 +19,11 @@ function Showlist() {
   return (
     <div className='list-div'>
       <h5> Showing you the results for {blogType.type} blogs</h5>
-      {
-        pending ? (<MoonLoader color="#36d7b7" className="home-spinner" />)
-          : <>
-            {requiredBlogs.length === 0 ? <div className='error-div'>Sorry, We currently have no content on {blogType.type} blogs.</div>
-              : requiredBlogs.map((blog) => <GetBlogBlock {...blog} />)}
-          </>
+      {pending ? (<MoonLoader color="#36d7b7" className="home-spinner" />)
+        : <>
+          {requiredBlogs.length === 0 ? <div className='error-div'>Sorry, We currently have no content on {blogType.type} blogs.</div>
+            : requiredBlogs.map((blog) => <GetBlogBlock {...blog} key={blog.id}/>)}
+        </>
       }
     </div>
   );
