@@ -1,7 +1,8 @@
 import React, { useRef, useState } from 'react';
-import useFetchData from '../../../hooks/useFetchData';
-import { IAllBlogFetch, IShowResult, ISingleBlogObject } from '../../types/types';
-import { GetBlogBlock } from './home';
+import useFetchData from '../../../../hooks/useFetchData';
+import { IAllBlogFetch, IShowResult, ISingleBlogObject } from '../../../types/types';
+import { GetBlogBlock } from '../home';
+import ShowSearchResult from './showSearchResult';
 
 export default function SearchBlockInHome() {
 
@@ -24,29 +25,13 @@ export default function SearchBlockInHome() {
 
       <div className="search-Blog">
         <h4>Explore : </h4>
-        <input type="text" placeholder="search a topic" value={searchInput} onChange={(event) => setSearchInput(event.target.value)} />
+        <input type="text" placeholder="search a topic" value={searchInput}
+          onChange={(event) => setSearchInput(event.target.value)} />
         <button onClick={handleSearch}>Search</button>
       </div>
       <hr />
 
-      <ShowResult {...{ filteredBlogs, searchResult, isAvailable }} />
+      <ShowSearchResult {...{ filteredBlogs, searchResult, isAvailable }} />
     </div>
   );
-}
-
-function ShowResult({ searchResult, isAvailable, filteredBlogs }: IShowResult) {
-  return (<>
-    <div ref={searchResult}>
-      {
-        isAvailable &&
-        <> {filteredBlogs.length ?
-          <>
-            <h4> Search results : </h4>
-            <div> {filteredBlogs.map((blog: ISingleBlogObject) => <GetBlogBlock {...blog} key={blog.id} />)} </div>
-          </>
-          : <h5> Sorry, No content available on searched topic</h5>}
-        </>
-      }
-    </div>
-  </>);
 }
