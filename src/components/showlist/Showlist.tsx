@@ -10,7 +10,7 @@ function Showlist() {
 
   const blogType = useParams();
   const [requiredBlogs, setRequiredBlogs] = useState<ISingleBlogObject[]>([]);
-  const { data, pending, error } = useFetchData('http://localhost:4000/blogData') as IAllBlogFetch;
+  const { data, pending } = useFetchData('http://localhost:4000/blogData') as IAllBlogFetch;
 
   useEffect(() => {
     setRequiredBlogs(data.filter((item) => item.blogType === blogType.type));

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
+import './searchBlockInHome.css'
 import useFetchData from '../../../../hooks/useFetchData';
-import { IAllBlogFetch, IShowResult, ISingleBlogObject } from '../../../types/types';
+import { IAllBlogFetch, ISingleBlogObject } from '../../../types/types';
 import ShowSearchResult from './showSearchResult';
 
 export default function SearchBlockInHome() {
@@ -24,9 +25,11 @@ export default function SearchBlockInHome() {
 
       <div className="search-Blog">
         <h4>Explore : </h4>
+        <form onSubmit={handleSearch}>
         <input type="text" placeholder="search a topic" value={searchInput}
           onChange={(event) => setSearchInput(event.target.value)} />
-        <button onClick={handleSearch}>Search</button>
+          <button type="submit">Submit</button>
+        </form>
       </div>
       <hr />
 

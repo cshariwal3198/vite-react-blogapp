@@ -38,7 +38,7 @@ export default function Admin() {
               return (
                 <tr key={id}>
                   <td>{Number(id)}</td>
-                  <td>{authorName}</td> 
+                  <td>{authorName}</td>
                   <td>{heading}</td>
                   <td>{blogType}</td>
                   <td><button onClick={() => handleDelete(Number(id))}>Delete</button>

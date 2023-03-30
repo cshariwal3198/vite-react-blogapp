@@ -1,0 +1,21 @@
+.search-Blog{
+    display: inline-block;
+}
+.search-Blog input[type = text]{
+    width: 70%;
+    height: 45px;
+    margin: 10px;
+    border: 2px solid rgb(7, 7, 7);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
+.search-Blog button{
+    width: 20%;
+    height: 48px;
+    border: 2px solid rgb(7, 7, 7);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 30px;
+}
