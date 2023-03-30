@@ -23,17 +23,6 @@
       "id": 2
     },
     {
-      "authorName": "Tom",
-      "email": "tom@gmail.com",
-      "password": "tom123",
-      "heading": "Tom and Jerry",
-      "picture": "https://e1.pxfuel.com/desktop-wallpaper/301/696/desktop-wallpaper-iphone-tom-and-jerry-tom-and-jerry-the-movie.jpg",
-      "content": "Tom and jerry is one of the most popular cartoon shows. These characters are introduced by Hanna and Barbera in the year 1940.",
-      "publishedOn": "2023-03-24",
-      "blogType": "Entertainment",
-      "id": 3
-    },
-    {
       "authorName": "Arjun",
       "email": "arjun@gmail.com",
       "password": "arjun123",

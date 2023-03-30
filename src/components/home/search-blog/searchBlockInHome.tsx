@@ -13,7 +13,8 @@ export default function SearchBlockInHome() {
 
   const { data } = useFetchData('http://localhost:4000/blogData') as IAllBlogFetch;
 
-  function handleSearch() {
+  function handleSearch(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
     setFilteredBlogs(data.filter((blog) => (blog.heading.toLowerCase().includes(searchInput.toLowerCase())
       || blog.blogType.toLowerCase().includes(searchInput.toLowerCase()))));
     setIsAvailable(true);
@@ -25,7 +26,7 @@ export default function SearchBlockInHome() {
 
       <div className="search-Blog">
         <h4>Explore : </h4>
-        <form onSubmit={handleSearch}>
+        <form onSubmit={(e)=>handleSearch(e)}>
         <input type="text" placeholder="search a topic" value={searchInput}
           onChange={(event) => setSearchInput(event.target.value)} />
           <button type="submit">Submit</button>

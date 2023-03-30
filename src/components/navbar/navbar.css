@@ -18,6 +18,9 @@
     color: white;
     font-size: 24px;
 }
+.head-list a:focus{
+    color: rgb(4, 54, 252);
+}
 .logo-div{
     text-align: center;
     border: .5px solid black;

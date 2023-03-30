@@ -18,4 +18,10 @@ export interface IShowResult {
     filteredBlogs: ISingleBlogObject[],
     searchResult: any,
     isAvailable: boolean;
+}
+
+export interface IAdminForm{
+    adminDetails: ISingleBlogObject,
+    getAdminDetails: Function,
+    varifyCredentials: Function;
   }

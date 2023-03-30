@@ -15,7 +15,6 @@ export default function Navbar() {
         <Link to='/categories'>Categories</Link>
         <Link to='/post'>Post a blog</Link>
         <Link to='/about'>About</Link>
-        <Link to='/varifyadmin'>Admin</Link>
       </ul>
       <hr />
     </div>

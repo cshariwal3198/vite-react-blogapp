@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import About from '../components/about-folder/about';
-import Admin from '../components/admin-files/admin';
-import VarifyAdmin from '../components/admin-files/varifyAdmin';
+import Admin from '../components/admin-files/Admin';
+import VarifyAdmin from '../components/admin-files/verification/varifyAdmin';
 import Categories from '../components/categories/categories';
 import Home from '../components/home/home';
 import Navbar from '../components/navbar/navbar';

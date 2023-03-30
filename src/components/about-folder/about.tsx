@@ -1,16 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './about.css';
 
 function About() {
   return (
     <div>
         <h3>Welcome to BlogQuest website</h3>
-        {/* <p>Its an open blog website where you can post your ideas or opinions on a decent matter
-            of your choice, and where it is pointing to spread hatred to some other personalities, religions,
-            castes, etc.
-        </p>
-        <p>
-            And also you can read blogs that are posted by other geeks.
-        </p> */}
+        <Link to='/varifyadmin' className='adminpage-link'>Adminpage</Link>
     </div>
   )
 }

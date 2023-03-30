@@ -1,0 +1,27 @@
+.varifyadmin-div{
+    margin: auto;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 30px;
+    color: rgb(249, 47, 11);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.varifyadmin-div img{
+    margin-left: 20px; 
+    width: 85%;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.login-div{
+    width: auto;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 25px;
+}
