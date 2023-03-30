@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './showlist.css';
 import { useParams } from 'react-router-dom';
 import { MoonLoader } from 'react-spinners';
-import useFetchData from '../../../hooks/useFetchData';
-import { IAllBlogFetch, ISingleBlogObject } from '../../types/types';
-import { GetBlogBlock } from '../home/home';
+import useFetchData from '../../../../hooks/useFetchData';
+import { IAllBlogFetch, ISingleBlogObject } from '../../../types/types';
+import { GetBlogBlock } from '../../home/home';
 
 function Showlist() {
 

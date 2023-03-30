@@ -11,3 +11,15 @@
     bottom: 40px;
     padding: 10px;
 }
+.update-blog{
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+    width: auto;
+    height: 30px;
+    border-radius: 8px;
+    text-decoration: underline;
+    font-family: cursive;
+    color: steelblue;
+    font-size: 27px;
+}
