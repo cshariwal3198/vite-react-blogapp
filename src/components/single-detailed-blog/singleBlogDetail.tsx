@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import './singleBlog.css';
+import './singleBlogDetail.css';
 import { CircleLoader } from "react-spinners";
 import { ISingleBlogFetch } from '../../types/types';
 import UseFetchData from '../../../hooks/useFetchData';

@@ -1,25 +1,20 @@
 import React, { useRef, useState } from "react";
 import './varifyAdmin.css';
 import { Link } from "react-router-dom";
-import AdminLoginForm from "./adminLoginForm";
+import LoginForm from "./loginForm";
+import ReturnPageLink from "./returnPageLink";
 
 export default function VarifyAdmin() {
-  const checkName = "chetansh";
+  const checkMail = "csh@gmail.com";
   const checkPass = "cshariwal";
 
-  const [adminDetails, setAdminDetails] = useState({ adminName: "", password: "" });
   const [isRightAdmin, setIsRightAdmin] = useState(false);
 
-  const getAdminDetails = ({ target }: React.ChangeEvent<HTMLInputElement>) => {
-    setAdminDetails({ ...adminDetails, [target.name]: target.value });
-  };
-
-  const varifyCredentials = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    if (adminDetails.adminName === checkName && adminDetails.password === checkPass) {
+  const varifyCredentials = (adminDetails: any) => {
+    console.log(adminDetails)
+    if (adminDetails.email === checkMail && adminDetails.password === checkPass) {
       setIsRightAdmin(true);
     }
-    setAdminDetails({ adminName: "", password: "" });
     showContent();
   };
 
@@ -37,24 +32,12 @@ export default function VarifyAdmin() {
       </div>
 
       <div className="login-div">
-        <AdminLoginForm {...{ adminDetails, getAdminDetails, varifyCredentials }} />
+        <LoginForm account="Admin" varifyCredentials={varifyCredentials} />
+
         <div ref={adminVisible} style={{ visibility: "hidden" }}>
-          <ReturnPageLink isRightAdmin={isRightAdmin} />
+          <ReturnPageLink isBooleanValue={isRightAdmin} path={'/admin'} pageAddress={'AdminPage'} />
         </div>
       </div>
     </div>
   );
 }
-
-function ReturnPageLink({ isRightAdmin }: { isRightAdmin: boolean; }) {
-  return (
-    <>
-      {isRightAdmin ?
-        <div>
-          Click here <Link to="/admin">AdminPage</Link>
-        </div>
-        : "Entered details are wrong...!! Please try again"}
-    </>
-  );
-}
-

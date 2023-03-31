@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import About from '../components/about-folder/about';
+import UpdateBlog from '../components/about-folder/update-blog/updateBlog';
 import Admin from '../components/admin-files/Admin';
 import VarifyAdmin from '../components/admin-files/verification/varifyAdmin';
 import Categories from '../components/categories/categories';
@@ -8,7 +9,7 @@ import Showlist from '../components/categories/showlist/showlist';
 import Home from '../components/home/home';
 import Navbar from '../components/navbar/navbar';
 import CreateBlog from '../components/new-blog/createBlog';
-import SingleBlog from '../components/single-detailed-blog/singleBlog';
+import SingleBlog from '../components/single-detailed-blog/singleBlogDetail';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <Route path='/admin' Component={Admin} />
       <Route path={'/singleblog/:id'} Component={SingleBlog} />
       <Route path={'/showlist/:type'} Component={Showlist} />
+      <Route path='/updateblog' Component={UpdateBlog}/>
     </Routes>
   </div>
 

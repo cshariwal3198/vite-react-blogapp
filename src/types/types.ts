@@ -1,14 +1,14 @@
-export interface ISingleBlogObject{
+export interface ISingleBlogObject {
     [key: string]: string;
 }
 
-export interface IAllBlogFetch{
+export interface IAllBlogFetch {
     data: ISingleBlogObject[],
     pending: boolean,
     error: string;
 }
 
-export interface ISingleBlogFetch{
+export interface ISingleBlogFetch {
     data: ISingleBlogObject,
     pending: boolean,
     error: string,
@@ -20,8 +20,13 @@ export interface IShowResult {
     isAvailable: boolean;
 }
 
-export interface IAdminForm{
-    adminDetails: ISingleBlogObject,
-    getAdminDetails: Function,
+export interface IAdminForm {
     varifyCredentials: Function;
-  }
+    account: string,
+}
+
+export interface IReturnPageLink {
+    isBooleanValue: boolean,
+    path: string,
+    pageAddress: string,
+}
